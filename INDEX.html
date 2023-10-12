@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Computer Science</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <b>NEWS :</b>
+            <marquee behavior="" direction="">
+                <pre>KDU General Convocation 2023 held on 03rd and 04th October 2023 at the BMICH                                 KDU signs an Articulation Agreement with the Western Sydney University, Australia</pre>
+            </marquee>
+        </div>
+    </div>
+    <div class="container">
+        <img src="logo.png" alt="kdu logo" class="logo">
+
+        <nav>
+          <a href="#">Home</a>
+          <a href="#degree-programmes">Programmes</a>
+          <a href="LECTURER TAB.HTML">Staff</a> 
+          <a href="index.html">Extra Curricular</a>
+          <a href="#contact-container">Contact Us</a>
+          <a href="jobs.html">Opportunities</a>
+      </nav>
+      
+        <div class="slidershow middle">
+            <div class="slides">
+                <input type="radio" name="r" id="r1">
+                <input type="radio" name="r" id="r2">
+                <input type="radio" name="r" id="r3">
+                <input type="radio" name="r" id="r4">
+                <div class="slide s1">
+                    <img src="computer-science-related-image-with--Computer-Science--written-in-middle-of-image.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="stem-t4l-AplbmIMHwAE-unsplash.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="lukas-hND1OG3q67k-unsplash.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="austin-distel-mpN7xjKQ_Ns-unsplash.jpg" alt="">
+                </div>
+            </div>
+            <div class="navigation">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+                <label for="r4" class="bar"></label>
+            </div>
+        </div>
+        <img src="banner1.jpg" alt="Kdu Image" class="about left">
+        <h2 class="welcome">Welcome to the Department of Computer Science</h2>
+        <p><pre class="about_des">
+          The Department of Computer  Science was  established on  1st  January 2015
+          with the objective of producing CS professionals of international standard
+          and primarily to fulfill requirements of the booming IT  industry and also 
+          to develop research. As the  youngest  department in the faculty it offers 
+          course modules related to scientific and theoretical  aspects of computing 
+          and also introduces new  course modules on  emerging  trends in  computing 
+          with an emphasis on the developments in Artificial Intelligence
+        </pre></p>
+        
+    </div>
+    <h1 id="degree-programmes" class="course">Degree Programmes</h1>
+    <div class="card-container1">
+      <div class="card">
+        <img src="Computer-Science.jpg" alt="computer science">
+        <div class="card-content">
+          <h2>BSc (Hons) Computer Science Degree</h2>
+          <a href="CSDepartment.html" class="btn"><h4>View More</h4></a>
+        </div>
+      </div> 
+    </div>
+    <div class="card-container2">
+      <div class="card">
+        <img src="software-engineer.jpg" alt="computer science">
+        <div class="card-content">
+          <h2>BSc (Hons) Software Engineering Degree</h2>
+          <a href="SEDepartment.html" class="btn"><h4>View More</h4></a>
+        </div>
+      </div>
+    </div>
+    <div class="contact-container" id="contact-container">
+      <h1 class="contact-h1">Contact Us</h1>
+      <div class="contact-box">
+        <div class="contact-left">
+          <h3>Send your request</h3>
+          <form class="contact-form" action="">
+
+            <div class="input-row">
+              <div class="input-group">
+                <label class="label">Name</label>
+                <input type="text" placeholder="Linuka Bineth">
+              </div>
+            </div>
+            <div class="input-row">
+              <div class="input-group">
+                <label class="label">Phone</label>
+                <input type="text" placeholder="0712345678">
+              </div>
+            </div>
+
+            <div class="input-row">
+              <div class="input-group">
+                <label class="label">Email</label>
+                <input type="text" placeholder="name@email.com">
+              </div>
+            </div>
+            <div class="input-row">
+              <div class="input-group">
+                <label class="label">Subject</label>
+                <input type="text" placeholder="Product Demo">
+              </div>
+            </div>
+
+            <label class="label">Message</label>
+            <textarea rows="5" cols="35" placeholder="Your Message"></textarea><br><br>
+
+            <button class="button" type="submit">SEND</button>
+          </form>
+        </div>
+        <div class="contact-right">
+          <h3>Reach Us</h3>
+
+          <table>
+            <tr>
+              <td><b>Email</b></td>
+              <td>contactus@kdu.ac.lk</td>
+            </tr>
+            <tr>
+              <td><b>Phone</b></td>
+              <td>0112555666</td>
+            </tr>
+            <tr>
+              <td><b>Address</b></td>
+              <td>Department of Computer Science,<br>
+                General Sir John Kotelawala Defence University,<br>
+                Kandawala Road,<br>
+                Rathmalana,<br>
+                Sri Lanka.</td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Image Slider Auto change script -->
+
+    <script>
+      let currentIndex = 0;
+      const slides = document.querySelectorAll('.slide');
+      const radioButtons = document.querySelectorAll('input[name="r"]');
+      const slideInterval = 3000; // Change slide every 3 seconds (3000 milliseconds)
+    
+      function changeSlide() {
+        slides[currentIndex].classList.remove('s1');
+        radioButtons[currentIndex].checked = false;
+        currentIndex = (currentIndex + 1) % slides.length;
+        slides[currentIndex].classList.add('s1');
+        radioButtons[currentIndex].checked = true;
+      }
+    
+      setInterval(changeSlide, slideInterval);
+    </script>
+
+    <!-- Contact us Smooth Script-->
+
+    <script>
+      document.querySelector('a[href="#contact-container"]').addEventListener('click', function (e) {
+          e.preventDefault(); // Prevent default link behavior
+  
+          const targetElement = document.querySelector(this.getAttribute('href'));
+          if (targetElement) {
+              targetElement.scrollIntoView({ behavior: 'smooth' });
+          }
+      });
+  </script>    
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2023 Department of Computer Science, General Sir John Kotelawala Defence University</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top-button" onclick="scrollToTop()">Back to Top</button>
+
+  <script>
+      // Function to scroll to the top of the page
+      function scrollToTop() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+  </script>
+</body>
+</html>
+
+
+
+
+
+

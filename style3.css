@@ -1,0 +1,194 @@
+
+
+/* Center text within the <body> element */
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #becfd5, #4fa5b4); /* Gradient background (adjust colors as needed) */
+  }
+  
+  /* Rest of your CSS code remains the same */
+  h1 {
+    font-size: 30px;
+    ;
+  }
+  
+  p {
+        font-size: 20px; /* Adjust the font size as needed */
+        font-family: sans-serif;
+        line-height: 1; /* Adjust the line height for better readability */
+        text-align: justify; /* Justify the text for a clean appearance */
+        color: #080404; /* Set the text color to dark gray (adjust as needed) */
+        margin-bottom: 20px; /* Add some space after the paragraph */
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 2px solid #000;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    
+  }
+  
+  .year-details {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  a button {
+    display: block;
+    
+  }
+ 
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Background color for the footer */
+  color: #fff; /* Text color for the footer */
+  padding: 10px;
+  text-align: center;
+}
+/* ... (your existing styles) */
+
+/* Add media queries for responsiveness */
+
+/* Responsive layout for large screens */
+@media (min-width: 1024px) {
+  .container {
+      max-width: 980px;
+  }
+  .slidershow {
+      margin: 20px auto;
+  }
+  .card-container1,
+  .card-container2 {
+      display: flex;
+      justify-content: space-between;
+  }
+  .card {
+      flex-basis: 48%;
+  }
+}
+
+/* Responsive layout for medium screens */
+@media (max-width: 1023px) {
+  .container {
+      max-width: 768px;
+      padding: 10px;
+  }
+  .slidershow {
+      margin: 10px auto;
+  }
+  .card-container1,
+  .card-container2 {
+      flex-direction: column;
+  }
+  .card {
+      margin: 10px 0;
+  }
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 767px) {
+  .container {
+      max-width: 100%;
+      padding: 10px;
+  }
+  .header {
+      font-size: 14px;
+  }
+  .welcome {
+      font-size: 20px;
+  }
+  .about_des {
+      font-size: 14px;
+  }
+  .slidershow {
+      margin: 10px auto;
+  }
+  .card {
+      margin: 10px 0;
+  }
+}
+/* ... (your existing styles) */
+
+/* Add media queries for responsiveness */
+
+/* Responsive layout for large screens */
+@media (min-width: 1024px) {
+  .container {
+      max-width: 980px;
+  }
+  .slidershow {
+      margin: 20px auto;
+  }
+  .card-container1,
+  .card-container2 {
+      display: flex;
+      justify-content: space-between;
+  }
+  .card {
+      flex-basis: 48%;
+  }
+}
+
+/* Responsive layout for medium screens */
+@media (max-width: 1023px) {
+  .container {
+      max-width: 768px;
+      padding: 10px;
+  }
+  .slidershow {
+      margin: 10px auto;
+  }
+  .card-container1,
+  .card-container2 {
+      flex-direction: column;
+  }
+  .card {
+      margin: 10px 0;
+  }
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 767px) {
+  .container {
+      max-width: 100%;
+      padding: 10px;
+  }
+  .header {
+      font-size: 14px;
+  }
+  .welcome {
+      font-size: 20px;
+  }
+  .about_des {
+      font-size: 14px;
+  }
+  .slidershow {
+      margin: 10px auto;
+  }
+  .card {
+      margin: 10px 0;
+  }
+}

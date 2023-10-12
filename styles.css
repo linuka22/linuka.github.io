@@ -1,0 +1,376 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif,arial;
+  font-size: 16px;
+
+  color: #242424;
+}
+
+.container{
+  width: 1300px;
+  margin: 0px auto;
+}
+
+.header{
+  background: #0055a4;
+  padding: 6px;
+}
+
+.header b{
+  background: #fff;
+  color: red;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.header marquee{
+  font-size: 20px;
+  color: white;
+  width: 80%;
+}
+
+/* Nav Bar CSS */
+
+.logo{
+  height: 65px;
+}
+
+nav{
+  float: right;
+  padding: 25px 0px;
+}
+
+nav a{
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 2px 10px;
+  font-weight:600;
+}
+
+/* Image Slider CSS */
+
+.slidershow{
+  width: 900px;
+  height: 500px;
+  overflow: hidden;
+}
+.middle{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,10%);
+  -webkit-transform: translate(-50%,10%);
+  -moz-transform: translate(-50%,10%);
+  -ms-transform: translate(-50%,10%);
+  -o-transform: translate(-50%,10%);
+}
+
+
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.bar:hover{
+  background: #fff;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+#r4:checked ~ .s1{
+  margin-left: -60%;
+}
+
+/* About CSS */
+
+.about {
+  position: relative;
+  transform: translate(0%,50%);
+  -webkit-transform: translate(0%,50%);
+  -moz-transform: translate(0%,50%);
+  -ms-transform: translate(0%,50%);
+  -o-transform: translate(0%,50%);
+}
+
+.welcome{
+  position: relative;
+  transform: translate(50%,-700%);
+  -webkit-transform: translate(50%,-700%);
+  -moz-transform: translate(50%,-700%);
+  -ms-transform: translate(50%,-700%);
+  -o-transform: translate(50%,-700%);
+}
+
+.about_des{
+  position: relative;
+  transform: translate(40%,-90%);
+  -webkit-transform: translate(40%,-90%);
+  -moz-transform: translate(40%,-90%);
+  -ms-transform: translate(40%,-90%);
+  -o-transform: translate(40%,-90%);
+}
+
+/* Degree Cards CSS */
+
+.course{
+  position: relative;
+  transform: translate(40%,160%);
+  -webkit-transform: translate(40%,160%);
+  -moz-transform: translate(40%,160%);
+  -ms-transform: translate(40%,160%);
+  -o-transform: translate(40%,160%);
+}
+
+.card-container1{
+  display: flex;
+  justify-self: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  position: relative;
+  transform: translate(20%);
+  -webkit-transform: translate(20%);
+  -moz-transform: translate(20%);
+  -ms-transform: translate(20%);
+  -o-transform: translate(20%);
+}
+
+.card-container2{
+  display: flex;
+  justify-self: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  position: relative;
+  transform: translate(55%,-124%);
+  -webkit-transform: translate(55%,-124%);
+  -moz-transform: translate(55%,-124%);
+  -ms-transform: translate(55%,-124%);
+  -o-transform: translate(55%,-124%);
+}
+
+.card{
+  width: 325px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.card-content .btn{
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #44e04c;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 16px;
+  transform: translate(90%);
+  -webkit-transform: translate(90%);
+  -moz-transform: translate(90%);
+  -ms-transform: translate(90%);
+  -o-transform: translate(90%);
+}
+
+/* Contact Us CSS */
+
+.contact-container{
+  width: 80%;
+  margin: 50px auto;
+  transform: translate(0%,-60%);
+}
+
+.contact-box{
+  background: #fff;
+  display: flex;
+}
+
+.contact-left{
+  flex-basis: 60%;
+  padding: 40px 60px;
+  transform: translate(0%,-7%);
+  -webkit-transform: translate(0%,-7%);
+  -moz-transform: translate(0%,-7%);
+  -ms-transform: translate(0%,-7%);
+  -o-transform: translate(0%,-7%);
+}
+
+.contact-right{
+  flex-basis: 40%;
+  padding: 40px ;
+  background: #1c00b5;
+  color: #fff;
+}
+
+.contact-h1{
+  margin-bottom: 10px;
+  transform: translate(50%,-100%);
+  -webkit-transform: translate(40%,-100%);
+  -moz-transform: translate(50%,-100%);
+  -ms-transform: translate(50%,-100%);
+  -o-transform: translate(50%,-100%);
+}
+
+.input-row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.input-row .input-group{
+  flex-basis: 45%;
+}
+
+input{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  padding: 5px;
+}
+
+.textarea{
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.label{
+  margin-bottom: 6px;
+  display: block;
+  color: #1c00b5;
+}
+
+.button{
+  background: #1c00b5;
+  width: 100px;
+  border: none;
+  outline: none;
+  color: #fff;
+  height: 35px;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 15px 0px rgba(36, 0, 181, 0.5);
+}
+
+.contact-left h3{
+  color: #1c00b5;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.contact-right h3{
+  font-weight: 600;
+  margin-bottom: 30px;
+  transform: translate(40%);
+}
+
+tr td:first-child{
+  padding-right: 20px;
+}
+
+tr td{
+  padding-top: 20px;
+}
+
+
+@media (min-width: 1024px) {
+  .container {
+      max-width: 980px;
+  }
+  .slidershow {
+      margin: 20px auto;
+  }
+  .card-container1,
+  .card-container2 {
+      display: flex;
+      justify-content: space-between;
+  }
+  .card {
+      flex-basis: 48%;
+  }
+}
+
+/* Responsive layout for medium screens */
+@media (max-width: 1023px) {
+  .container {
+      max-width: 768px;
+      padding: 10px;
+  }
+  .slidershow {
+      margin: 10px auto;
+  }
+  .card-container1,
+  .card-container2 {
+      flex-direction: column;
+  }
+  .card {
+      margin: 10px 0;
+  }
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 767px) {
+  .container {
+      max-width: 100%;
+      padding: 10px;
+  }
+  .header {
+      font-size: 14px;
+  }
+  .welcome {
+      font-size: 20px;
+  }
+  .about_des {
+      font-size: 14px;
+  }
+  .slidershow {
+      margin: 10px auto;
+  }
+  .card {
+      margin: 10px 0;
+  }
+}
